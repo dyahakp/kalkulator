@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#D8ACAC">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCIENCETIFIC  CALCULATOR"
+        android:background="#C48D8D"
+        android:paddingTop="25dp"
+        android:paddingBottom="20dp"
+        android:textSize="25sp"
+        android:textColor="#AF3E3E"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="INPUT SUDUT"
+            android:lines="3"
+            android:inputType="number"
+            android:paddingTop="50dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/sin"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/edit_btn"
+            android:text="SIN"/>
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sin"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/edit_btn"
+            android:text="COS"/>
+
+        <Button
+            android:id="@+id/tan"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/sin"
+            android:background="@drawable/edit_btn"
+            android:text="TAN"/>
+
+        <Button
+            android:id="@+id/cosec"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sin"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/cos"
+            android:background="@drawable/edit_btn"
+            android:text="COSEC"/>
+
+        <Button
+            android:id="@+id/sec"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input"
+            android:layout_above="@+id/ctgn"
+            android:layout_toRightOf="@+id/tan"
+            android:background="@drawable/edit_btn"
+            android:text="SEC"/>
+
+        <Button
+            android:id="@+id/ctgn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sin"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/cosec"
+            android:background="@drawable/edit_btn"
+            android:text="CTGN"/>
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cosec"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/cos"
+            android:background="@drawable/edit_btn"
+            android:text="LOG 10"/>
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/log"
+                android:text="0.0"
+                android:paddingTop="25dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
